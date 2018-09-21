@@ -56,22 +56,35 @@
         background-color: #232956;
     }
 
-    .subrayar {
-        text-decoration: underline;
+    .subrayar0 {
+        color: Black;
+        border-bottom: 1px solid black;
+    }
 
+    .subrayar {
+        color: Black;
+        border-bottom: 1px solid red;
     }
 
     .subrayar1 {
-        text-decoration: underline;
-        color: #0938cf;
-        max-width: 95%;
-        border: 1px #0938cf solid;
-        border-radius: 5px;
-        margin: 5px;
-
+        color: Black;
+        border-bottom: 1px solid purple;
     }
 
-    .vacio {}
+    .subrayar2 {
+        color: Black;
+        border-bottom: 1px solid blue;
+    }
+
+    .subrayar3 {
+        color: Black;
+        border-bottom: 1px solid green;
+    }
+
+    .subrayar4 {
+        color: Black;
+        border-bottom: 1px solid yellow;
+    }
 </style>
 
 <body>
@@ -79,9 +92,9 @@
         <button type="button" class="close" onclick="cerrar_ayuda()" aria-label="Close"><span class="glyphicon glyphicon-remove-sign"
                 aria-hidden="true"></span></button>
         <!--ACA ESCRIBIR TEXTO DE LA AYUDA DE LA ACTIVIDAD-->
-        1. Lee cuidadosamente las preguntas, contesta cada una de ellas.<br>
-         Lee cuidadosamente las preguntas, contesta cada
-        una de ellas.<br> 3. Da (2 clics) -> subrayar y (3 clics) -> sybrayar y paréntesis (encerrar).<br>
+        1. Lee cuidadosamente las pregunta y contesta.<br>
+        2. Da (2 clics) para subrayar la palabra.<br>
+        3. Lee cuidadosamente las pregunta y contesta.<br>
         <span id="ayudas"></span>
     </div>
 
@@ -159,52 +172,140 @@
             <div class="panel-body">
                 <div class="text-question">
                     <input type="text" size="2" style="text-align:center" class="nota-abierta calif" min="0" max="10" id="pre1a" readonly>&nbsp;
-                    <span><b>1. Subraya </b> la subordinada adjetiva en las oraciones y <b>determina</b> si es explicativa
-                        o especificativa.</span>
+                    <span><b>1. Realiza </b> la sustitución pronominal del elemento subrayado. <b>Sigue</b> el ejemplo.</span>
                 </div><br>
+                <table class="table" style="text-align: center">
+                    <tr>
+                        <td WIDTH="50%" bgcolor="#1FC5E3" style="color: #FFFFFF"><b>Oración</b></td>
+                        <td WIDTH="50%" bgcolor="#E3751F" style="color: #FFFFFF"><b>Sustitución</b></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <table class="table" style="text-align: center" border="1" bordercolor="#1AAADF">
 
-                <table class="table" border="1" bordercolor="#9E75D5">
-                    <tr>
-                        <div class="col-lg-12  imagen1  " id="ranuno1"></div>
-                        
+                                <tr>
+                                    <td WIDTH="50%">
+                                        <div class="text-question">
+                                            <span><span class="subrayar">Martha</span> se cayó de la bicicleta.</span>
+                                        </div>
+                                    </td>
+                                    <td WIDTH="50%">
+                                        <span> <div class="text-question">
+                                                <span><b>Ella</b> se cayó de la bicicleta.</span>
+                                            </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
                     </tr>
                     <tr>
-                        <div class="col-lg-12  imagen1  " id="ranuno2"></div>
-                        
+                        <td colspan="2">
+                            <div class="col-lg-12  imagen1  " id="ranuno1"></div>
+
+                        </td>
                     </tr>
                     <tr>
-                        <div class="col-lg-12  imagen1  " id="ranuno3"></div>
-                        
+                        <td colspan="2">
+                            <div class="col-lg-12  imagen1  " id="ranuno2"></div>
+
+                        </td>
                     </tr>
                     <tr>
-                        <div class="col-lg-12  imagen1  " id="ranuno4"></div>
-                        
+                        <td colspan="2">
+                            <div class="col-lg-12  imagen1  " id="ranuno3"></div>
+
+                        </td>
                     </tr>
                     <tr>
-                        <div class="col-lg-12  imagen1  " id="ranuno5"></div>
-                        
+                        <td colspan="2">
+                            <div class="col-lg-12  imagen1  " id="ranuno4"></div>
+
+                        </td>
                     </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="col-lg-12  imagen1  " id="ranuno5"></div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="col-lg-12  imagen1  " id="ranuno6"></div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="col-lg-12  imagen1  " id="ranuno8"></div>
+
+                        </td>
+                    </tr>
+
+
                 </table><br>
 
                 <div class="text-question">
                     <input type="text" size="2" style="text-align:center" class="nota-abierta calif" min="0" max="10" id="pre2a" readonly>&nbsp;
-                    <span><b>2. Lee </b> el texto y <b>subraya</b> las oraciones subordinadas adjetivas explicativas.
-                        <b>Encierra</b> entre paréntesis las especificativas.</span>
+                    <span><b>2. Lee </b> el siguiente texto y <b>subraya</b> las expresiones que son una sustitución pronominal.
+                    </span>
+                </div><br>
+                <div class="text-question">
+                    <span><span class="enc2" id="1">Mercedes</span> <span class="enc2" id="2">consiguió</span> <span class="enc2"
+                            id="3">trabajo</span> <span class="enc2" id="4">después</span> <span class="enc2" id="5">de</span>
+                        <span class="enc2" id="6">una</span> <span class="enc2" id="7">larga</span> <span class="enc2" id="8">búsqueda</span>.
+                        <span class="enc2" id="9">Ella</span> <span class="enc2" id="10">lo</span> <span class="enc2" id="11">buscó</span>
+                        <span class="enc2" id="12">por </span><span class="enc2" id="13">más </span><span class="enc2" id="14">de
+                        </span><span class="enc2" id="15">un </span><span class="enc2" id="16">año. </span><span class="enc2"
+                            id="17">Dejó </span><span class="enc2" id="18">su </span><span class="enc2" id="19">currículo </span><span
+                            class="enc2" id="20">en </span><span class="enc2" id="21">muchísimas </span><span class="enc2" id="22">empresas,
+                        </span><span class="enc2" id="23">las cuales</span><span class="enc2" id="24">
+                        </span><span class="enc2" id="25">casi </span><span class="enc2" id="26">nunca </span><span class="enc2"
+                            id="27">le</span> <span class="enc2" id="28">respondían. </span><span class="enc2" id="29">También
+                        </span><span class="enc2" id="30">aplicó </span><span class="enc2" id="31">en </span><span class="enc2"
+                            id="32">ofertas </span><span class="enc2" id="33">de </span><span class="enc2" id="34">Internet.
+                        </span><span class="enc2" id="35">A </span><span class="enc2" id="36">todo
+                        </span><span class="enc2" id="37">eso</span>, <span class="enc2" id="38">se </span><span class="enc2"
+                            id="39">suma </span><span class="enc2" id="40">que </span><span class="enc2" id="41">esta </span><span
+                            class="enc2" id="42">muchacha </span><span class="enc2" id="43">nunca </span><span class="enc2" id="44">se
+                        </span><span class="enc2" id="45">desanimó </span><span class="enc2" id="46">y </span><span class="enc2"
+                            id="47">siempre </span><span class="enc2" id="48">mantuvo </span><span class="enc2" id="49">la
+                        </span><span class="enc2" id="50">esperanza </span><span class="enc2" id="51">de </span><span class="enc2"
+                            id="52">conseguir</span><span class="enc2" id="53">lo</span>.</span>
                 </div><br>
 
                 <div class="text-question">
-                        <span><span class="enc" id="16">El autobús</span>, <span class="enc" id="17">que había sido adquirido recientemente</span>, <span class="enc" id="18">circulaba a gran velocidad
-                                por la autopista</span> <span class="enc" id="19">que estaba mojada</span>. <span class="enc" id="20">A pesar del estado de la vía, el
-                                conductor</span>, <span class="enc" id="21">que era muy joven</span>, <span class="enc" id="22">no dio señales de disminuir la velocidad</span>.
-                                <span class="enc" id="23">El conductor</span>, <span class="enc" id="24">que demostraba un absoluto descuido</span>, <span class="enc" id="25">tomó su teléfono
-                                celular y realizó una llamada</span>. <span class="enc" id="26">Los pasajeros</span>, <span class="enc" id="27">que no salían de su asombro</span>,
-                                <span class="enc" id="28">estaban realmente preocupados</span>. <span class="enc" id="29">Por suerte, terminó la pesadilla cuando el
-                                autobús se detuvo debido al tráfico</span> <span class="enc" id="30">que la lluvia había generado</span>. <span class="enc" id="31">Algunos
-                                conductores de vehículos más pequeños</span>, <span class="enc" id="32">testigos de la imprudencia del
-                                chofer del bus</span>, <span class="enc" id="33">avisaron al primer policía</span> <span class="enc" id="34">que vieron</span>. <span class="enc" id="35">El uniformado, con la
-                                ayuda de algunos curiosos</span>, <span class="enc" id="36">arrestó al temerario joven.</span></span>
-                    </div><br>
+                    <input type="text" size="2" style="text-align:center" class="nota-abierta calif" min="0" max="10" id="pre3a">&nbsp;
+                    <span><b>3. Escribe </b> en el siguiente cuadro la expresión a la que sustituyen los pronombres.</span>
+                </div><br>
 
+                <div class="text-question">
+                    <span>Conmovedor el homenaje realizado en la Universidad Central a la doctora Isabel Robalino. El 14
+                        de octubre cumple 100 años de vida dedicada a la justicia social, a la defensa de la democracia y
+                        a la práctica de la honradez. Así <font color="purple"><b>lo</b></font> reconocieron expresidentes
+                        del Ecuador, militantes e intelectuales de diversa vertiente ideológica, trabajadores, educadores,
+                        comunicadores, rectores de universidades y egresados del Instituto Nacional Mejía, su colegio, que
+                        <font color="purple"><b>se</b></font> dieron cita para celebrar
+                        <font color="purple"><b>su</b></font> cumpleaños.</span>
+                </div><br>
+                <table class="table" style="text-align: center" border="1" bordercolor="purple">
+                    <tr>
+                        <td WIDTH="10%" bgcolor="#7DE05A" style="color: #FFFFFF"><b><h4>Pronombre</h4></b></td>
+                        <td WIDTH="90%" bgcolor="#ECADDD" style="color: #FFFFFF"><b><h4>Expresión sustituida</h4></b></td>
+                    </tr>
+                    <tr>
+                        <td>lo</td>
+                        <td><textarea class="form-control text-question no-redimensionar" cols="60" rows="1" placeholder="Texto"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>su</td>
+                        <td><textarea class="form-control text-question no-redimensionar" cols="60" rows="1" placeholder="Texto"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>se</td>
+                        <td><textarea class="form-control text-question no-redimensionar" cols="60" rows="1" placeholder="Texto"></textarea></td>
+                    </tr>
+
+                </table><br>
 
 
             </div>
@@ -258,7 +359,7 @@
             <script src="js/Utilitario.js"></script>
             <script src="js/numPaginas.js"></script>
             <script src="js/validacionesExtras.js"></script>
-            <script src="js/actividad51.js"></script>
+            <script src="js/actividad54.js"></script>
 
 
 </body>

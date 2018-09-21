@@ -60,18 +60,6 @@
         text-decoration: underline;
 
     }
-
-    .subrayar1 {
-        text-decoration: underline;
-        color: #0938cf;
-        max-width: 95%;
-        border: 1px #0938cf solid;
-        border-radius: 5px;
-        margin: 5px;
-
-    }
-
-    .vacio {}
 </style>
 
 <body>
@@ -79,9 +67,7 @@
         <button type="button" class="close" onclick="cerrar_ayuda()" aria-label="Close"><span class="glyphicon glyphicon-remove-sign"
                 aria-hidden="true"></span></button>
         <!--ACA ESCRIBIR TEXTO DE LA AYUDA DE LA ACTIVIDAD-->
-        1. Lee cuidadosamente las preguntas, contesta cada una de ellas.<br>
-         Lee cuidadosamente las preguntas, contesta cada
-        una de ellas.<br> 3. Da (2 clics) -> subrayar y (3 clics) -> sybrayar y paréntesis (encerrar).<br>
+        Lee cuidadosamente las preguntas, contesta cada una de ellas.<br>
         <span id="ayudas"></span>
     </div>
 
@@ -158,57 +144,30 @@
             </div>
             <div class="panel-body">
                 <div class="text-question">
-                    <input type="text" size="2" style="text-align:center" class="nota-abierta calif" min="0" max="10" id="pre1a" readonly>&nbsp;
-                    <span><b>1. Subraya </b> la subordinada adjetiva en las oraciones y <b>determina</b> si es explicativa
-                        o especificativa.</span>
+                    <input type="text" size="2" style="text-align:center" class="nota-abierta calif" min="0" max="10" id="pre1a">&nbsp;
+                    <span><b>1. Indica </b> el nombre de seis signos de puntuación.</span>
                 </div><br>
-
-                <table class="table" border="1" bordercolor="#9E75D5">
-                    <tr>
-                        <div class="col-lg-12  imagen1  " id="ranuno1"></div>
-                        
-                    </tr>
-                    <tr>
-                        <div class="col-lg-12  imagen1  " id="ranuno2"></div>
-                        
-                    </tr>
-                    <tr>
-                        <div class="col-lg-12  imagen1  " id="ranuno3"></div>
-                        
-                    </tr>
-                    <tr>
-                        <div class="col-lg-12  imagen1  " id="ranuno4"></div>
-                        
-                    </tr>
-                    <tr>
-                        <div class="col-lg-12  imagen1  " id="ranuno5"></div>
-                        
-                    </tr>
-                </table><br>
-
+                <textarea class="form-control text-question no-redimensionar" cols="60" rows="3" placeholder="Texto"></textarea><br>
                 <div class="text-question">
-                    <input type="text" size="2" style="text-align:center" class="nota-abierta calif" min="0" max="10" id="pre2a" readonly>&nbsp;
-                    <span><b>2. Lee </b> el texto y <b>subraya</b> las oraciones subordinadas adjetivas explicativas.
-                        <b>Encierra</b> entre paréntesis las especificativas.</span>
-                </div><br>
-
-                <div class="text-question">
-                        <span><span class="enc" id="16">El autobús</span>, <span class="enc" id="17">que había sido adquirido recientemente</span>, <span class="enc" id="18">circulaba a gran velocidad
-                                por la autopista</span> <span class="enc" id="19">que estaba mojada</span>. <span class="enc" id="20">A pesar del estado de la vía, el
-                                conductor</span>, <span class="enc" id="21">que era muy joven</span>, <span class="enc" id="22">no dio señales de disminuir la velocidad</span>.
-                                <span class="enc" id="23">El conductor</span>, <span class="enc" id="24">que demostraba un absoluto descuido</span>, <span class="enc" id="25">tomó su teléfono
-                                celular y realizó una llamada</span>. <span class="enc" id="26">Los pasajeros</span>, <span class="enc" id="27">que no salían de su asombro</span>,
-                                <span class="enc" id="28">estaban realmente preocupados</span>. <span class="enc" id="29">Por suerte, terminó la pesadilla cuando el
-                                autobús se detuvo debido al tráfico</span> <span class="enc" id="30">que la lluvia había generado</span>. <span class="enc" id="31">Algunos
-                                conductores de vehículos más pequeños</span>, <span class="enc" id="32">testigos de la imprudencia del
-                                chofer del bus</span>, <span class="enc" id="33">avisaron al primer policía</span> <span class="enc" id="34">que vieron</span>. <span class="enc" id="35">El uniformado, con la
-                                ayuda de algunos curiosos</span>, <span class="enc" id="36">arrestó al temerario joven.</span></span>
+                        <span><b>1.Lee </b>el texto y <b>reconoce</b> el uso de los dos puntos.</span>
                     </div><br>
-
-
-
-            </div>
-
+                <div class="text-question">
+                        <span>Querido amigo:
+                                Yo te quería escribir, pero el correo andaba arisco. Si me permites, trataré de remitir
+                                noticias frescas en el disco: aquí en la tierra están jugando y gritan gol, hay mucha samba, mucho show y rock
+                                and roll; a veces llueve y otros días brilla el sol, mas yo quiero decirte que la cosa aquí está negra...<br><br>
+                                </span>
+                    </div>
+                    <div><h5 align="right">Chico Buarque<br>
+                        Buarque, Chico y otros (1982) ”Querido amigo”. S/T. Recuperado de https://goo.gl/bK2JyH</h5></div>
+                <div class="text-question">
+                        <input type="text" size="2" style="text-align:center" class="nota-abierta calif" min="0" max="10" id="pre2a">&nbsp;
+                        <span><b>3. </b>¿Para qué se han empleado los dos puntos en el texto anterior?</span>
+                    </div><br>
+                    <textarea class="form-control text-question no-redimensionar" cols="60" rows="3" placeholder="Texto"></textarea><br>
+                
+            
+        </div>
             <!-- Modal Guardar PDF-->
             <div class="modal fade animated pulse" id="myModal" role="dialog">
                 <div class="modal-dialog">
@@ -258,7 +217,7 @@
             <script src="js/Utilitario.js"></script>
             <script src="js/numPaginas.js"></script>
             <script src="js/validacionesExtras.js"></script>
-            <script src="js/actividad51.js"></script>
+            <script src="js/actividad59.js"></script>
 
 
 </body>
