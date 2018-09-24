@@ -1,5 +1,5 @@
 var titulos = "exploro";
-numero_pagina(72);
+numero_pagina(75);
 
 var tpre1 = 0;
 var tpre2 = 0;

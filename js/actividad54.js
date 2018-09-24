@@ -1,5 +1,5 @@
 var titulos = "aplico";
-numero_pagina(65);
+numero_pagina(75);
 
 document.getElementById("pre3a").addEventListener("keypress", () => {
   validNumero(0, 1, 1);

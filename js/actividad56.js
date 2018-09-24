@@ -1,5 +1,5 @@
 var titulos = "reflexiono";
-numero_pagina(66);
+numero_pagina(76);
 
 document.getElementById("pre1a").addEventListener("keypress", () => {
   validNumero(0, 1, 1);
