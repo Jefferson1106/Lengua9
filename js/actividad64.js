@@ -462,14 +462,14 @@ function pregunta11() {
     parseInt(respri3) +
     parseInt(respri4);
 
-  var totalR = ((suma - sumai) * 1) / 1;
+  var totalR = ((suma - sumai) * 0.5) / 1;
   if (totalR < 0) {
     tpre11 = 0;
   } else {
     tpre11 = totalR;
   }
 
-  tpre11 = total.toFixed(2);
+  tpre11 = totalR.toFixed(2);
   $("#pre11a").val(parseFloat(tpre11).toFixed(2));
 }
 
@@ -546,7 +546,7 @@ function pregunta13() {
     }
   }
 
-  var total = ((respr1 - respr2) * 1) / 1;
+  var total = ((respr1 - respr2) * 0.5) / 1;
   if (total < 0) {
     total = 0;
     tpre13 = total;
